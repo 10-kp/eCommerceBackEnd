@@ -20,31 +20,27 @@ A back-end for an e-commerce website that uses the latest technologies.
 ## Installation
 - Create and download a repository
 
-- Create an SQL Workbench file 
-
 - Create a git repo and open the containing folder
 
-- Open VS Code and create a .gitignore file and iput node_modules/ and .DS_Store/
+- Open VS Code 
+    - Create a .gitignore file and iput node_modules/ and .DS_Store/
+    - Create a dotenv file
 
-- In the VS Code terminal, run npm init -y (to answer all queries) and to create package_json
+- In the VS Code terminal, run npm init -y (to answer all queries) and to create package_json and install the following dependencies:
 
-- In the VS Code terminal, install the following dependencies:
     - npm install mysql
     - npm install inquirer
     - npm install console.table --save
 
-- Run 'node tracker.js' in the command line
+- Run 'npm run seed' and then 'npm start' or 'node server.js' in the command line
 
-- NODE JS
-A command-line application that dynamically generates a Employee Tracker from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer)
-  
-The application will be invoked with the following command: node tracker.js
+- Create an SQL Workbench file 
 
 
 ## Test
 Here is a video demonstrating how to use the application
 
-[employee-tracker-video](https://www.youtube.com/watch?v=s0MKBF1d-D0) 
+[employee-tracker-video](xx) 
 
 
 ## Technologies
