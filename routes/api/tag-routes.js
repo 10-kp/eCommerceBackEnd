@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
   try {
     // find all library cards and perform a JOIN to include all associated Readers
     const tagData = await Tag.findAll({
-      include: [{ model: Product, attributes: ['id','product_name', 'price', 'stock', 'category_id'] }],
+      include: [{ model: Product, attributes: ['product_name', 'price', 'stock', 'category_id'] }],
     });
     res.status(200).json(tagData);
   } catch (err) {
@@ -21,7 +21,8 @@ router.get('/:id', async (req, res) => {
   // find a single tag by its `id`
   // be sure to include its associated Product data
   try {
-    const tagData = await Tag.findOne({where:{id = req.params.id},
+    const tagData = await Tag.findOne({
+      where: {id: req.params.id},
       include: [{ model: Product, attributes: ['product_name', 'price', 'stock', 'category_id']}],
     });
 
